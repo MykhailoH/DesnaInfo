@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DesnaInfo.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DesnaInfo.Business\DesnaInfo.Business.csproj" />
+    <ProjectReference Include="..\DesnaInfo.LevelFetcher\DesnaInfo.LevelFetcher.csproj" />
+    <ProjectReference Include="..\DesnaInfo.Viber.Classes\DesnaInfo.Viber.Classes.csproj" />
+    <ProjectReference Include="..\DesnaInfo.ViewModels\DesnaInfo.ViewModels.csproj" />
+  </ItemGroup>
+
+
+</Project>
